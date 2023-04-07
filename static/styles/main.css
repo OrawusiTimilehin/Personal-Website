@@ -182,3 +182,44 @@ p{
 }
 
 
+/* Call to action Section */
+.call-to-action{
+    font-size: 5rem;
+    text-align: center;
+}
+
+#contact{
+    margin-top: 10rem;
+}
+
+.contact-container{
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.contact-me-button{
+    display: block;
+    margin: 4rem auto;
+
+}
+
+
+.email-icon{
+    padding-right: 1rem;
+    position: absolute;
+    bottom: 1.1rem;
+    width: 1.4rem;
+}
+
+
+/* Footer Section */
+
+.footer-container{
+    background-color: rgba(209, 208, 208, 0.02);
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.31);
+    border-width: 1px 0 0 0;
+    color: white;
+    height: 3rem;
+}
