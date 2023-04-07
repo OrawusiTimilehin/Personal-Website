@@ -1,7 +1,6 @@
 body {
     background: rgba(22, 22, 22, 0.98);
     margin: 0;
-    padding-bottom: 1000rem;
 }
 
 div{
@@ -23,7 +22,7 @@ p{
 }
 
 .headers{
-    background: linear-gradient(90deg, #FFF4F4 2.25%, rgba(255, 245, 245, 0.90625) 11.39%, rgba(255, 255, 255, 0) 139.19%);
+    background: linear-gradient(90deg, #FFF4F4 10%, rgba(255, 245, 245, 0.90625) 18.39%, rgba(255, 255, 255, 0) 139.19%);
     font-size: 3rem;
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
     font-weight: 200;
@@ -32,6 +31,23 @@ p{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
+}
+
+.buttons{
+    background-color: rgba(209, 208, 208, 0.02);
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.48);
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.1rem;
+    padding: 1.2rem 6rem;
+}
+
+.newline-words{
+    display: block;
 }
 /* Navbar */
 
@@ -78,9 +94,6 @@ p{
     margin: 1.6rem;
 }
 
-.first-header-text{
-    display: block;
-}
 
 .greeting-container{
     display: flex;
@@ -106,29 +119,26 @@ p{
     margin-top: 1em;
 }
 
-.hire-me-button{
-    background-color: rgba(209, 208, 208, 0.02);
-    border: solid;
-    border-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.48);
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.1rem;
-    padding: 1.2rem 6rem;
-}
-
-
 .profile-pic{
     width: 217px;
 }
 
 
 /* Skills Section */
+.flask-logo{
+    width: 6rem;
+}
+
+.python-logo{
+    width: 6rem;
+}
 
 .github-logo{
     margin-bottom: 1rem;
+}
+
+.logos{
+    width: 2.5rem;
 }
 
 .skills-box{
@@ -148,8 +158,27 @@ p{
 
 #projects{
     margin-top: 4rem;
+    margin-bottom: 9rem;
+}
+
+.project-box{
+    background-color: rgba(110, 110, 110, 0.1);
+    height: 25rem;
+    width: 18rem;
+
 }
 
 .projects-container{
-    
+    column-gap: 6.7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 0 auto;
+    row-gap: 4.5rem;
+    width: 75%
+
 }
+
+
