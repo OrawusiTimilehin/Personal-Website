@@ -22,6 +22,17 @@ p{
     margin-block-end: 0;
 }
 
+.headers{
+    background: linear-gradient(90deg, #FFF4F4 2.25%, rgba(255, 245, 245, 0.90625) 11.39%, rgba(255, 255, 255, 0) 139.19%);
+    font-size: 3rem;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 7rem;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
 /* Navbar */
 
 .navbar{
@@ -53,8 +64,8 @@ p{
 .description-text{
     background: linear-gradient(90deg, #FFF4F4 2.25%, rgba(255, 245, 245, 0.90625) 11.39%, rgba(255, 255, 255, 0) 139.19%);
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    font-weight: 300;
+    font-size: 50px;
+    font-weight: 200;
     line-height: 50px;
     text-align: center;
     -webkit-background-clip: text;
@@ -63,7 +74,7 @@ p{
 }
 
 .description-text-container{
-    width: 500px;
+    width: 100%;
     margin: 1.6rem;
 }
 
@@ -128,5 +139,17 @@ p{
     border-width: 1px 0;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 3rem;
+}
+
+
+
+/* Projects Section */
+
+#projects{
+    margin-top: 4rem;
+}
+
+.projects-container{
+    
 }
