@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Oluwatimilehin </title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;900&family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+        <title> Oluwatimilehin Portfolio </title>
+       {% include "header.html"%}
     </head>
     <body>
         {% include "navbar.html" %}
         <main>
             <!-- Intro Section -->
             <section id="intro-section"> 
+                <!-- Container of the Intro elements -->
                 <div class="greeting-container">
                     <img class="profile-pic" src="static/images/Profile Pic.png" alt="Oluwatimilehin Orawusi Profile Picture">
                     <p class="greeting-text-container"><span class="greeting-text"> Hi i am Oluwatimilehin</span><span>✌🏾</span></p>
@@ -26,6 +24,7 @@
 
             <!-- Section for all your skills, languages and frameworks you know -->
             <section id="skills-section">
+                <!-- The container of the skills logos -->
                 <div class="skills-box">
                    <img class="github-logo logos" src="static/images/Logos/github-original.png" alt="Github Logo">
                    <img class="flask-logo" src="static/images/Logos/flask-original-wordmark.png" alt="Flask Logo">
@@ -39,7 +38,8 @@
             <!-- Projects Section -->
 
             <section id="projects"> 
-                <h1 class="headers"> Projects </h1>
+                <h1 class="headers body-text"> Projects </h1>
+                <!-- The Container in which the Display grid is applied to. -->
                 <div class="projects-container">
                     <div class="project-box">
                         <img class="project-icons" src="static/images/Frame 13.png" alt="Folder Icon">
@@ -77,7 +77,7 @@
 
             <section id="contact">
                 <div class="contact-container">
-                    <h1 class=" headers call-to-action"> Want to make that dream a <span class="newline-words">reality ?</span> </h1>
+                    <h1 class="body-text headers call-to-action"> Want to make that dream a <span class="newline-words">reality ?</span> </h1>
                     <button class="buttons contact-me-button"> CONTACT ME <img class="email-icon" src="static/images/Group 1.png"></button>
                 </div>
             </section>
