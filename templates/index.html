@@ -41,34 +41,46 @@
                 <h1 class="headers body-text"> Projects </h1>
                 <!-- The Container in which the Display grid is applied to. -->
                 <div class="projects-container">
-                    <div class="project-box">
-                        <img class="project-icons" src="static/images/Frame 13.png" alt="Folder Icon">
-                        <h3 class="project-title project-text"> Machine Learning & Data Science </h3>
-                        <p class="project-text">A Sophisticated Regression model predicts earnings, analyzes wage disparities, informs evidence-based solutions for economic dynamics.</p>
-                    </div>
-                    <div class="project-box">
-                        <img class="project-icons" src="static/images/Frame 14.png" alt="At Sign Icon">
-                        <h3 class="project-title project-text project-title-extra"> Web Development </h3>
-                        <p class="project-text">Innovative blog developed with HTML, CSS, Bootstrap, Flask, and immersive user experience, responsiveness, and functionality.</p>
-                    </div>
-                    <div class="project-box">
-                        <img class="project-icons" src="static/images/Frame 15.png"  alt="Files Icon">
-                        <h3 class="project-title project-text project-title-extra"> Scripting & Gui Application </h3>
-                        <p class="project-text">Weather app automates weather data retrieval and processing. GUI app provides intuitive interface for weather data visualization and user interaction.</p>
-                    </div>
-                    <div class="project-box">
-                        <img class="project-icons" src="static/images/computer-dynamic-gradient.png" alt="Computer Logo">
-                        <h3 class="project-title project-text project-title-web"> Web Scraping & Automation </h3>
-                        <p class="project-text">Scripting program monitors internet connection and tweets at ISP provider when low connectivity is detected, providing automated and efficient feedback system.</p>
-                    </div>
-                    <div class="project-box">
-                        <img class="project-icons" src="static/images/roll-brush-dynamic-gradient.png" alt="Roll Paint Brush Logo">
-                        <h3 class="project-title project-text project-title-coming-soon">Coming Soon</h3>
-                    </div>
-                    <div class="project-box">
-                        <img class="project-icons" src="static/images/Frame 18.png" alt="Hand tools Logo">
-                        <h3 class="project-title project-text project-title-coming-soon">Coming Soon</h3>
-                    </div>
+                    <a href="{{ url_for('projects', id=1) }}">
+                        <div class="project-box">
+                            <img class="project-icons" src="static/images/Frame 13.png" alt="Folder Icon">
+                            <h3 class="project-title project-text"> Machine Learning & Data Science </h3>
+                            <p class="project-text">A Sophisticated Regression model predicts earnings, analyzes wage disparities, informs evidence-based solutions for economic dynamics.</p>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('projects', id=2) }}">
+                        <div class="project-box">
+                            <img class="project-icons" src="static/images/Frame 14.png" alt="At Sign Icon">
+                            <h3 class="project-title project-text project-title-extra"> Web Development </h3>
+                            <p class="project-text">Innovative blog developed with HTML, CSS, Bootstrap, Flask, and immersive user experience, responsiveness, and functionality.</p>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('projects', id=3) }}">
+                        <div class="project-box">
+                            <img class="project-icons" src="static/images/Frame 15.png"  alt="Files Icon">
+                            <h3 class="project-title project-text project-title-extra"> Scripting & Gui Application </h3>
+                            <p class="project-text">Weather app automates weather data retrieval and processing. GUI app provides intuitive interface for weather data visualization and user interaction.</p>
+                        </div>
+                    </a>
+                    <a href="{{ url_for('projects', id=4) }}">
+                        <div class="project-box">
+                            <img class="project-icons" src="static/images/computer-dynamic-gradient.png" alt="Computer Logo">
+                            <h3 class="project-title project-text project-title-web"> Web Scraping & Automation </h3>
+                            <p class="project-text">Scripting program monitors internet connection and tweets at ISP provider when low connectivity is detected, providing automated and efficient feedback system.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="project-box">
+                            <img class="project-icons" src="static/images/roll-brush-dynamic-gradient.png" alt="Roll Paint Brush Logo">
+                            <h3 class="project-title project-text project-title-coming-soon">Coming Soon</h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="project-box">
+                            <img class="project-icons" src="static/images/Frame 18.png" alt="Hand tools Logo">
+                            <h3 class="project-title project-text project-title-coming-soon">Coming Soon</h3>
+                        </div>
+                    </a>
                 </div>
             </section>
             

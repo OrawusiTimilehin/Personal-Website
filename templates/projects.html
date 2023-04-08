@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        {% include "navbar.html"%}
+        {% include "header.html"%}
+        <link rel="stylesheet" href=" {{ url_for('static', filename='styles/projects.css') }}">
+        
+    </head>
+    <body>
+        <main>
+            <div class="project-flexbox">
+                <div class="project-left-section">
+                    <h1 class="headers body-text project-header"> {{ project.name }}</h1>
+                    <div class="project-display">
+                    </div>
+                    <a class="github-link body-text" href="{{ project.github_link }}">Github Link</a>
+                </div>
+                <div class="project-description body-text project-body">
+                    {{ project.description }}
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

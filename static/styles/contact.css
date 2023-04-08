@@ -1,0 +1,59 @@
+/* Contact Page */
+
+.contact-form{
+    background-color: rgba(209, 208, 208, 0.02);
+    border: 1px solid;
+    border-color:rgba(255, 255, 255, 0.31);
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.input-box-small{
+    height: 2rem;
+}
+.contact-form-container{
+    background:#1A1A1A;
+    border-color:rgba(255, 255, 255, 0.31);
+    margin: 0 auto;
+    width: 50%;
+}
+
+.contact-form-labels{
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.error-message{
+    background: linear-gradient(90deg, #fcb5b5 20%, rgba(247, 185, 185, 0.906) 40.39%, rgba(255, 255, 255, 0) 180.19%);
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-element{
+    border: none;
+}
+.submit-button{
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.31);
+    display: block;
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 20%
+}
+
+.submit-button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Success Message */
+
+.success{
+    text-align: center;
+    margin-top: 15rem;
+}
