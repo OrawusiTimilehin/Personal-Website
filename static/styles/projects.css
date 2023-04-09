@@ -6,7 +6,9 @@
 }
 
 .github-link:hover{
-
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.05);
 }
 
 .project-flexbox{
@@ -22,9 +24,11 @@
 }
 
 .project-display{
-    width: 100%;
-    height: 25rem;
     background-color: rgba(209, 208, 208, 0.02);
+    height: 25rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    
 }
 
 .project-left-section{
