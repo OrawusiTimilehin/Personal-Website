@@ -26,7 +26,7 @@
             <section id="skills-section">
                 <!-- The container of the skills logos -->
                 <div class="skills-box">
-                   <a href="https://github.com/OrawusiTimilehin"><img class="github-logo logos" src="static/images/Logos/github-original.png" alt="Github Logo"></a>
+                   <a class="navbar-link" href="https://github.com/OrawusiTimilehin"><img class="github-logo logos" src="static/images/Logos/github-original.png" alt="Github Logo"></a>
                    <img class="flask-logo" src="static/images/Logos/flask-original-wordmark.png" alt="Flask Logo">
                    <img class="python-logo" src="static/images/Logos/Frame 20.png" alt="Python Logo">
                    <img class="logos" src="static/images/Logos/Programming logos and icons by hrhasnai (4).png" alt="HTML Logo">
@@ -90,15 +90,11 @@
             <section id="contact">
                 <div class="contact-container">
                     <h1 class="body-text headers call-to-action"> Want to make that dream a <span class="newline-words">reality ?</span> </h1>
-                    <button class="buttons contact-me-button"> CONTACT ME <img class="email-icon" src="static/images/Group 1.png"></button>
+                    <a href="{{ url_for('contact') }}"><button class="buttons contact-me-button"> CONTACT ME <img class="email-icon" src="static/images/Group 1.png"></button></a>
                 </div>
             </section>
             
-            <!-- Footer -->
-            <footer id="footer">
-                <div class="footer-container">
-                </div>
-            </footer>
+            {% include "footer.html" %}
 
         </main>
     </body>

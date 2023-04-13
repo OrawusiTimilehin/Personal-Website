@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect, request
+from flask import Flask, render_template, url_for, redirect, request, send_file
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, EmailField
 from wtforms.validators import DataRequired, Email
@@ -59,6 +59,10 @@ def projects(id):
     project_id = id
     project = Projects.query.get(project_id)
     return render_template('projects.html', project=project)
+
+@app.route("/cv")
+def cv():
+    return send_file("static/Oluwatimilehin CV Modified 1.pdf")
 
 
 if __name__ == "__main__":

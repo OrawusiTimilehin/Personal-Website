@@ -3,6 +3,9 @@
     <head>
         {% include "header.html" %}
         <link rel="stylesheet" href=" {{ url_for('static', filename='styles/contact.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;500;900&display=swap" rel="stylesheet">
     </head>
     <body>
         {% include "navbar.html" %}
@@ -11,20 +14,21 @@
             <form class="form-element" action="{{url_for('contact')}}" method="POST">
                 {{ form.csrf_token}}
                 {% if error != None %}
-                <h3 class="body-text contact-form-labels"> Email: <span class="error-message"> {{error}} </span> </h3>
+                <h3 class="body-text contact-form-labels labels"> Email: <span class="error-message"> {{error}} </span> </h3>
                 {% else %}
-                <h3 class="body-text contact-form-labels"> Email: </h3>
+                <h3 class="body-text contact-form-labels labels"> Email: </h3>
                 {% endif%}
                 <input class="contact-form input-box-small" name="email"> <br>
-                <h3 class="body-text contact-form-labels"> Name: </h3>
+                <h3 class="body-text contact-form-labels labels"> Name: </h3>
                 <input class="contact-form input-box-small" name="name"> <br>
-                <h3 class="body-text contact-form-labels"> Message: </h3>
+                <h3 class="body-text contact-form-labels labels"> Message: </h3>
                 <textarea class="contact-form" name="message" rows="9" column="15"> 
                 </textarea> <br>
-                <h3 class="body-text contact-form-labels"> Additional Information: </h3>
+                <h3 class="body-text contact-form-labels labels"> Additional Information: </h3>
                 <input class="contact-form input-box-small" type="text" name="additional_info"> <br>
                 <button class="submit-button body-text" type="submit" size> Submit </button>
             </form>
         </div>
+        {% include "footer.html"%}
     </body>
 </html>
