@@ -13,7 +13,7 @@ body {
 .body-text{
     background: linear-gradient(90deg, #FFF4F4 2.25%, rgba(255, 245, 245, 0.90625) 11.39%, rgba(255, 255, 255, 0) 139.19%);
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
-    font-weight: 900;
+    font-weight: 200;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -206,16 +206,22 @@ p{
 }
 
 .projects-container{
-    column-gap: 6.7rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: space-between;
+    place-items: center;
     margin: 0 auto;
     row-gap: 4.5rem;
     text-align: center;
-    width: 75%
+    width: 100%;
+    
 
+}
+
+.projects-grid-container{
+    width: 90%;
+    margin: auto;
 }
 .project-text{
     background: linear-gradient(90deg, #FFF4F4 2.25%, rgba(255, 245, 245, 0.90625) 11.39%, rgba(255, 255, 255, 0) 139.19%);
@@ -271,43 +277,43 @@ p{
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 200;
-    padding-right: 7rem;
+    padding: 1rem 3rem;
+    text-align: center;
     margin: 4rem auto;
-    width: 45%;
-
-}
-
-
-.email-icon{
-    padding-right: 2rem;
-    position: absolute;
-    bottom: 1.1rem;
-    width: 1.55rem;
-}
-
-
-/* Footer Section */
-
-.footer-flexbox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 30%;
-    height: 100%;
-
-
-}
-
-.footer-container{
+    white-space: nowrap;
+    width: 20%;
     background-color: rgba(209, 208, 208, 0.02);
     border: solid;
-    border-color: rgba(255, 255, 255, 0.31);
-    border-width: 1px 0 0 0;
-    color: white;
-    height: 3rem;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.48);
+    transition: background-color 0.15s ease-in-out;
+}
+
+.contact-me-button:hover{
+    background-color: rgba(209, 208, 208, 0.1);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
 }
 
 
 
+
+
+
+
+
+
+
+
+
+/* Responsiveness */
+
+@media screen and (min-width: 1281px) {
+    #intro-section{
+        margin: 8.7rem 0;
+    }
+ 
+  }
 

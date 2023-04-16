@@ -22,8 +22,9 @@
 }
 
 .contact-form-labels{
-    font-size: 1rem;
-    font-weight: 200;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 900;
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
 }
