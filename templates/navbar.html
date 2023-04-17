@@ -4,7 +4,11 @@
             <span> <a  class="navbar-link" href="{{ url_for('home') }}">Oluwatimilehin</a> </span>
         </div>
         <div class="navbar-right">
+            {% if home %}
             <span><a  class="navbar-link" href="#projects"> projects </a></span>
+            {% else %}
+            <span> </span>
+            {% endif %}
             <span><a class="navbar-link" href=" {{ url_for('cv') }}"> cv </a></span>
             <span> <a class="navbar-link" href="{{ url_for('contact') }}"> contact </a></span>
     

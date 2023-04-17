@@ -178,6 +178,12 @@ p{
     padding: 1rem 3rem;
 }
 
+.skills-link:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
 
 
 /* Projects Section */

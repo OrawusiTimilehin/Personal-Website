@@ -33,7 +33,7 @@ db.create_all()
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", home=True)
 
 @app.route("/contact", methods=["POST", "GET"])
 def contact():
@@ -51,14 +51,14 @@ def contact():
             error = "Please Enter in a valid Email"
             return render_template("contact.html", form=contact_form, error=error)
 
-    return render_template("contact.html" , form=contact_form, error=error)
+    return render_template("contact.html" , form=contact_form, error=error, home=False)
 
 
 @app.route("/projects/<id>")
 def projects(id):
     project_id = id
     project = Projects.query.get(project_id)
-    return render_template('projects.html', project=project)
+    return render_template('projects.html', project=project, home=True)
 
 @app.route("/cv")
 def cv():
