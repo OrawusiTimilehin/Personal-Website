@@ -81,10 +81,10 @@ p{
 }
 
 
-.navbar-left{
-    margin-left: 5.5rem;
-}
 
+.navbar-link{
+    margin-right: 2rem;
+}
 .navbar-link:hover {
     background: linear-gradient(90deg, #FFF4F4 2.25%, rgba(255, 245, 245, 0.90625) 30.39%, rgba(255, 255, 255, 0) 180.19%);
     -webkit-background-clip: text;
