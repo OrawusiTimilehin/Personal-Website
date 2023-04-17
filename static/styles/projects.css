@@ -1,6 +1,6 @@
 /* Projects Page */
 
-.github-link{
+.github-text-link{
     font-size: 2.5rem;
     margin-left: 9rem;
     transition: font-size 0.15s;
@@ -49,3 +49,4 @@
 .project-body{
     text-align: center;
 }
+

@@ -9,9 +9,9 @@
         <footer id="footer">
             <div class="footer-container">
                 <div class="footer-flexbox"> 
-                    <a class="footer-link google-link" href="mailto:oluwatimilehin.orawusi@gmail.com"><img class="github-logo logos" src="static/images/Google - Original.png" alt="Google Logo"></a>
-                    <a class="footer-link github-link" href="https://github.com/OrawusiTimilehin" target="_blank"><img class="github-logo logos" src="static/images/Logos/github-original.png" alt="Github Logo"></a>
-                    <a class="footer-link  linkedin-link" href="https://www.linkedin.com/in/timilehin-orawusi-b92287252/" target="_blank"><img class="github-logo logos" src="static/images/LinkedIn - Original.png" alt="LinkedIn Logo"></a>
+                    <a class="footer-link google-link" href="mailto:oluwatimilehin.orawusi@gmail.com"><img class="github-logo logos" src="{{ url_for('static', filename='images/Google - Original.png') }}" alt="Google Logo"></a>
+                    <a class="footer-link github-link" href="https://github.com/OrawusiTimilehin" target="_blank"><img class="github-logo logos" src=" {{ url_for('static', filename='images/Logos/github-original.png') }}" alt="Github Logo"></a>
+                    <a class="footer-link  linkedin-link" href="https://www.linkedin.com/in/timilehin-orawusi-b92287252/" target="_blank"><img class="github-logo logos" src="{{ url_for('static', filename='images/LinkedIn - Original.png') }}" alt="LinkedIn Logo"></a>
                 </div>
             </div>
         </footer>
