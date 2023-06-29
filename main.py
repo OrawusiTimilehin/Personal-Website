@@ -6,6 +6,7 @@ from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 import ssl
 import smtplib
+import os
 
 
 
@@ -13,8 +14,11 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'nviwbv8(*403gjBVEI^@Go2u@f2GU^@%B39(+_!£)BTV'
 Bootstrap(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///projects1.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://personal_website_db_buow_user:HCdE4WP31pP9MrKyMSk92gEOajOzPSPR@dpg-ciesoc6nqql22ekofckg-a.oregon-postgres.render.com/personal_website_db_buow"
 db = SQLAlchemy(app)
+
+
+#  postgresql://personal_website_db_buow_user:HCdE4WP31pP9MrKyMSk92gEOajOzPSPR@dpg-ciesoc6nqql22ekofckg-a.oregon-postgres.render.com/personal_website_db_buow
 
 class Projects(db.Model):
     id = db.Column(db.String(250),primary_key=True)
