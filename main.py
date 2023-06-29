@@ -4,6 +4,8 @@ from wtforms import StringField, SubmitField, EmailField
 from wtforms.validators import DataRequired, Email
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
+import ssl
+import smtplib
 
 
 
@@ -11,7 +13,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'nviwbv8(*403gjBVEI^@Go2u@f2GU^@%B39(+_!£)BTV'
 Bootstrap(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///projects.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///projects1.db"
 db = SQLAlchemy(app)
 
 class Projects(db.Model):
@@ -19,6 +21,7 @@ class Projects(db.Model):
     name = db.Column(db.String(250), unique=True, nullable=False)
     description = db.Column(db.String(1000), nullable=False)
     github_link = db.Column(db.String(500), unique=True)
+    youtube_url = db.Column(db.String(500), unique=True)
 
 app.app_context().push()
 class ContactForm(FlaskForm):
@@ -28,7 +31,7 @@ class ContactForm(FlaskForm):
     additional_info = StringField(label="Additional Information:", validators=[DataRequired()])
     submit = SubmitField(label="Submit")
 
-db.create_all()
+# db.create_all()
 
 
 @app.route("/")
@@ -45,12 +48,32 @@ def contact():
             email = data['email']
             name = data['name']
             message = data['message']  
-            additional_info = data['additional_info']
+            
+            
+
+            port = 587  # For starttls
+            smtp_server = "smtp.gmail.com"
+            sender_email = "timipythontesting@gmail.com"
+            receiver_email = "oluwatimilehin.orawusi@gmail.com"
+            password = "ojdsxfzcmcnzmvds"
+            message = f"""
+            Subject: Contact Me Info
+
+
+            Name: {name}\nEmail: {email}\nMessage: {message}"""
+
+
+            context = ssl.create_default_context()
+            with smtplib.SMTP(smtp_server, port) as server:
+                server.starttls(context=context)
+                server.login(sender_email, password)
+                server.sendmail(sender_email, receiver_email, message)
+
             return render_template("successful.html")
         else:
             error = "Please Enter in a valid Email"
             return render_template("contact.html", form=contact_form, error=error)
-
+         
     return render_template("contact.html" , form=contact_form, error=error, home=False)
 
 
@@ -58,11 +81,20 @@ def contact():
 def projects(id):
     project_id = id
     project = Projects.query.get(project_id)
-    return render_template('projects.html', project=project, home=True)
+    shorts = False
+    availability = True
+    if project_id =="3":
+        shorts= True
+    else:
+        pass
+    if project_id==1:
+        availability = False
+
+    return render_template('projects.html', project=project, home=False, shorts=shorts, available=availability)
 
 @app.route("/cv")
 def cv():
-    return send_file("static/Oluwatimilehin CV Modified 1.pdf")
+    return send_file("static/Oluwatimilehin CV Modified 2.pdf")
 
 
 if __name__ == "__main__":

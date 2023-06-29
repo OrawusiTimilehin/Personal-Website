@@ -1,0 +1,12 @@
+body{
+    margin: 5rem;
+}
+.success{
+    display: flex;
+    justify-content: center;
+    width: 50%
+}
+
+.buttons{
+    margin-left: 30%;
+}

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {% include "header.html"%}
-        {% include "navbar.html"%}
+        {% include "navbar.html" %}
+        {% include "header.html" %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='static/styles/successful.css') }}">
     </head>
     <body>
         <div class="success">
             <h1 class="headers body-text"> Message Sent Succesfully </h1>
-            <a href="{{ url_for('home') }}"><button class="buttons" > HOME </button></a>
+            <a href="{{ url_for('home') }}"><button class="buttons"> HOME</button></a>
         </div>
     </body>
 </html>
