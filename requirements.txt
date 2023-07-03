@@ -30,7 +30,6 @@ Flask==2.2.3
 Flask-Bootstrap==3.3.7.1
 Flask-SQLAlchemy==3.0.3
 Flask-WTF==1.1.1
-fonttools==4.39.3
 fqdn==1.5.1
 gunicorn==20.1.0
 idna==3.4
