@@ -94,7 +94,7 @@ def projects(id):
     else:
         pass
 
-    return render_template('projects.html', project=project, home=False, shorts=shorts, available=availability)
+    return render_template('projects.html', project=project, home=False, shorts=shorts, available=availability, project_id=project)
 
 @app.route("/cv")
 def cv():
