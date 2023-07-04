@@ -89,10 +89,10 @@ def projects(id):
     availability = True
     if project_id =="3":
         shorts= True
+    elif project_id==1:
+        availability = False
     else:
         pass
-    if project_id==1:
-        availability = False
 
     return render_template('projects.html', project=project, home=False, shorts=shorts, available=availability)
 
