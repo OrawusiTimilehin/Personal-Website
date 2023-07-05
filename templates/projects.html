@@ -13,15 +13,15 @@
                     <div class="project-display">
                         {% if shorts%}
                         <iframe width="315" height="400" src="{{project.youtube_url}}" title="{{project.name}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        {% elif available %}
+                        <iframe src="{{project.youtube_url}}" title="{{project.name}}"></iframe>
                         {% endif %}
 
                         {% if not available %}
                         <img src="static/images/n:a gif.gif">
                         {% endif %}
 
-                        {% if available %}
-                        <iframe src="{{project.youtube_url}}" title="{{project.name}}"></iframe>
-                        {% endif %}
+                        
                         
                     </div>
                     <a class="github-text-link body-text" href="{{ project.github_link }}" target="_blank">Github Link</a>
