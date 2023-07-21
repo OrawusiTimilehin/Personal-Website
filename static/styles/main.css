@@ -11,7 +11,7 @@ body {
 }
 
 .body-text{
-    background: linear-gradient(90deg, #FFF4F4 2.25%, rgba(255, 245, 245, 0.90625) 11.39%, rgba(255, 255, 255, 0) 139.19%);
+    background: linear-gradient(90deg, #FFF4F4 2.25%, rgba(255, 245, 245, 0.90625) 11.39%);
     font-family: 'Outfit', Arial, Helvetica, sans-serif;
     font-weight: 200;
     -webkit-background-clip: text;
